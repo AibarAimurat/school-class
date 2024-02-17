@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой класс</title>
+  <style>
+    /* Стили для всего раздела учеников */
+    .students {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 50px 0;
+    }
+
+    /* Стили для каждого ученика */
+    .student {
+      width: 250px;
+      padding: 20px;
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* Стили для фотографий учеников */
+    .student-photo {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    /* Стили для описания учеников */
+    .student-description {
+      text-align: center;
+    }
+
+    /* Стили для заголовков учеников */
+    .student-description h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Стили для параграфа учеников */
+    .student-description p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    /* Эффект наведения на учеников */
+    .student:hover {
+      background-color: #e0e0e0;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="students">  <!-- Изменил класс с "student" на "students" -->
+    <div class="student">
+      <img class="student-photo" src="https://exclusive.kz/wp-content/uploads/2022/06/123613.jpg" alt="Илон Маск" width="200">
+      <div class="student-description">
+        <h3>Илон Маск</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget tincidunt laoreet.</p>
+      </div>
+    </div>
+    <div class="student">
+      <img class="student-photo" src="https://rgnp.ru/wp-content/uploads/f/c/4/fc4689cb1571f3e2aa34afd6d0f95773.jpeg" alt="Эйнштейн" width="200">
+      <div class="student-description">
+        <h3>Альберт Эйнштейн</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget tincidunt laoreet.</p>
+      </div>
+    </div>
+    <div class="student">
+      <img class="student-photo" src="https://proprikol.ru/wp-content/uploads/2020/04/kartinki-garri-potter-43.jpg" alt="Гарии Поттер" width="200">
+      <div class="student-description">
+        <h3>Гарии Поттер</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget tincidunt laoreet.</p>
+      </div>
+    </div>
+    <!-- Добавьте сюда больше учеников -->
+  </div>
+</body>
+</html>
